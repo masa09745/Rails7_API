@@ -21,8 +21,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_23_090625) do
     t.bigint "ship_id", null: false
     t.string "from"
     t.string "to"
-    t.datetime "dep_time"
-    t.datetime "arr_time"
+    t.time "dep_time"
+    t.time "arr_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["ship_id"], name: "index_schedules_on_ship_id"
