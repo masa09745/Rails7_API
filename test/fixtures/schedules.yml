@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Ship: one
+  from: MyString
+  to: MyString
+  dep_time: 2022-06-23 18:06:25
+  arr_time: 2022-06-23 18:06:25
+
+two:
+  Ship: two
+  from: MyString
+  to: MyString
+  dep_time: 2022-06-23 18:06:25
+  arr_time: 2022-06-23 18:06:25
