@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :menu, only: %i[index]
-      resources :ships, only: %i[index]
+      resources :menu, only: :index
+      resources :ships, only: [:index, :show]
 
       mount_devise_token_auth_for 'User', at: 'auth', controllers: {
         registrations: 'api/v1/auth/registrations'
