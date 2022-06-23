@@ -21,7 +21,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_23_090625) do
     t.bigint "ship_id", null: false
     t.string "from"
     t.string "to"
+    t.date "dep_date"
     t.time "dep_time"
+    t.date "arr_date"
     t.time "arr_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
