@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_23_090625) do
 
   create_table "schedules", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "ship_id", null: false
+    t.string "flight_number"
     t.string "from"
     t.string "to"
     t.date "dep_date"
