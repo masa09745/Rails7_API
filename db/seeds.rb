@@ -38,13 +38,13 @@
   ])
 
   maintenances = Maintenance.create!([
-    {date: "2022/06/24", ATA: "33", title: "READING LT NG", discription:"READING LT 点灯せず。 BULB CHG SAME", ship_id: "1"},
-    {date: "2022/06/24", ATA: "21", title: "PACK FAIL", discription:"PACK FAIL MSG APPEAR MM:21XXXX092 RESET後OPE CK OK", ship_id: "1"},
-    {date: "2022/06/24", ATA: "32", title: "BRK TEMP HI", discription:"ARR後 BRK TEMP高め。 要WATCH", ship_id: "1"},
-    {date: "2022/06/24", ATA: "45", title: "IFE INOP", discription:"IN FLTでALL IFE INOP MASTER RESETでOK", ship_id: "2"},
-    {date: "2022/06/24", ATA: "33", title: "TAXT LT NG", discription:"TAXI LT 点灯せず CHGお願いします ", ship_id: "2"},
-    {date: "2022/06/24", ATA: "72", title: "L ENG ITT HI", discription:"L ENG ITT高めです。 STAYでW/Wお願いします。", ship_id: "2"},
-    {date: "2022/06/24", ATA: "32", title: "RI BRK WORN", discription:"RI BRK残り1mm STAYでCHGお願いします。", ship_id: "3"},
-    {date: "2022/06/24", ATA: "27", title: "FLT CONT NO DISP ", discription:"FLT CONT NO DISP MSG APPEAR RTS実施でOK", ship_id: "3"},
-    {date: "2022/06/24", ATA: "22", title: "AP FAIL", discription:"AP FAIL MSG APPER RESETでOK", ship_id: "3"},
+    {date: "2022/06/24", ATA: "33", title: "READING LT NG", description:"READING LT 点灯せず。 BULB CHG SAME", ship_id: "1"},
+    {date: "2022/06/24", ATA: "21", title: "PACK FAIL", description:"PACK FAIL MSG APPEAR MM:21XXXX092 RESET後OPE CK OK", ship_id: "1"},
+    {date: "2022/06/24", ATA: "32", title: "BRK TEMP HI", description:"ARR後 BRK TEMP高め。 要WATCH", ship_id: "1"},
+    {date: "2022/06/24", ATA: "45", title: "IFE INOP", description:"IN FLTでALL IFE INOP MASTER RESETでOK", ship_id: "2"},
+    {date: "2022/06/24", ATA: "33", title: "TAXT LT NG", description:"TAXI LT 点灯せず CHGお願いします ", ship_id: "2"},
+    {date: "2022/06/24", ATA: "72", title: "L ENG ITT HI", description:"L ENG ITT高めです。 STAYでW/Wお願いします。", ship_id: "2"},
+    {date: "2022/06/24", ATA: "32", title: "RI BRK WORN", description:"RI BRK残り1mm STAYでCHGお願いします。", ship_id: "3"},
+    {date: "2022/06/24", ATA: "27", title: "FLT CONT NO DISP ", description:"FLT CONT NO DISP MSG APPEAR RTS実施でOK", ship_id: "3"},
+    {date: "2022/06/24", ATA: "22", title: "AP FAIL", description:"AP FAIL MSG APPER RESETでOK", ship_id: "3"},
   ])

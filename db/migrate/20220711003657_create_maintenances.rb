@@ -5,7 +5,7 @@ class CreateMaintenances < ActiveRecord::Migration[7.0]
       t.date :date
       t.string :ATA
       t.string :title
-      t.string :discription
+      t.string :description
       t.timestamps
     end
   end

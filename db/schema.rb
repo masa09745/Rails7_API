@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
     t.date "date"
     t.string "ATA"
     t.string "title"
-    t.string "discription"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["ship_id"], name: "index_maintenances_on_ship_id"
