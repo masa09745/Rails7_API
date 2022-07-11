@@ -5,9 +5,15 @@ class Api::V1::ShipsController < ApplicationController
     render json: @ships
   end
 
-  def show
+  def schedules
     @ship = Ship.includes(:schedules).find(params[:id])
     @schedules = @ship.schedules
     render json: @schedules
+  end
+
+  def maintenances
+    @ship = Ship.includes(:maintenances).find(params[:id])
+    @maintenances = @ship.maintenances
+    render json: @maintenances
   end
 end

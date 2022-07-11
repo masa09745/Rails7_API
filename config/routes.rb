@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :menu, only: :index
-      resources :ships, only: [:index, :show] do
-        resources :schedules, only: :index
+      resources :ships, only: :index do
+        member do
+          get 'maintenances'
+          get 'schedules'
+        end
       end
 
       mount_devise_token_auth_for 'User', at: 'auth', controllers: {
