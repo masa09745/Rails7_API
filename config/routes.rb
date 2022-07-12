@@ -14,7 +14,7 @@ Rails.application.routes.draw do
       }
 
       namespace :auth do
-        resources :sessions, only: %i[index]
+        resources :sessions, only: :index
       end
     end
   end
