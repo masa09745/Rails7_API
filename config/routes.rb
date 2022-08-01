@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :menu, only: :index
+      resources :sections, only: :index do
+        member do
+          get 'roles'
+        end
+      end
       resources :ships, only: :index do
         member do
           get 'maintenances'
