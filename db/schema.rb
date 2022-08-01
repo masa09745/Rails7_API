@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_01_141744) do
+ActiveRecord::Schema[7.0].define(version: 202208011141800) do
   create_table "maintenances", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "ship_id", null: false
     t.date "date"
@@ -51,7 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_01_141744) do
   end
 
   create_table "sections", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "neme"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -80,7 +80,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_01_141744) do
     t.string "last_kana"
     t.string "employee_number"
     t.string "email"
-    t.string "section"
+    t.bigint "section_id", null: false
+    t.bigint "role_id", null: false
     t.text "tokens"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -88,10 +89,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_01_141744) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["employee_number"], name: "index_users_on_employee_number", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["role_id"], name: "index_users_on_role_id"
+    t.index ["section_id"], name: "index_users_on_section_id"
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
   add_foreign_key "maintenances", "ships"
   add_foreign_key "roles", "sections"
   add_foreign_key "schedules", "ships"
+  add_foreign_key "users", "roles"
+  add_foreign_key "users", "sections"
 end
