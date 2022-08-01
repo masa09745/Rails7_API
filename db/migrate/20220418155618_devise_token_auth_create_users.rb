@@ -35,7 +35,9 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[7.0]
       t.string :last_kana
       t.string :employee_number
       t.string :email
-      t.string :section
+      t.references :section, null: false, foreign_key: true
+      t.references :role, null: false, foreign_key: true
+      
 
       ## Tokens
       t.text :tokens
