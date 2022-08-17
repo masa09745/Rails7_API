@@ -11,7 +11,11 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 202208011141800) do
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
+>>>>>>> parent of ac04c62 (部署と役割のテーブルを作成し、Userテーブルと紐づける)
 =======
 ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
 >>>>>>> parent of ac04c62 (部署と役割のテーブルを作成し、Userテーブルと紐づける)
@@ -47,12 +51,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   create_table "sections", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+=======
+>>>>>>> parent of ac04c62 (部署と役割のテーブルを作成し、Userテーブルと紐づける)
 =======
 >>>>>>> parent of ac04c62 (部署と役割のテーブルを作成し、Userテーブルと紐づける)
   create_table "ships", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
