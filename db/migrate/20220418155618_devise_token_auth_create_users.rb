@@ -36,7 +36,10 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[7.0]
       t.string :employee_number
       t.string :email
       t.string :section
+<<<<<<< HEAD
       t.string :role
+=======
+>>>>>>> parent of ac04c62 (部署と役割のテーブルを作成し、Userテーブルと紐づける)
 
       ## Tokens
       t.text :tokens
