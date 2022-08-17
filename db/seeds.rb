@@ -48,21 +48,3 @@
     {date: "2022/06/24", ATA: "27", title: "FLT CONT NO DISP ", description:"FLT CONT NO DISP MSG APPEAR RTS実施でOK", ship_id: "3"},
     {date: "2022/06/24", ATA: "22", title: "AP FAIL", description:"AP FAIL MSG APPER RESETでOK", ship_id: "3"},
   ])
-
-  sections = Section.create!([
-    {name: "運航乗員部"},
-    {name: "客室乗員部"},
-    {name: "整備部"},
-    {name: "運航管理部"},
-    {name: "総務部"},
-  ])
-
-  roles = Role.create!([
-    {name: "機長", section_id: "1"},
-    {name: "副操縦士", section_id: "1"},
-    {name: "チーフ", section_id: "2"},
-    {name: "キャビンアテンダント", section_id: "2"},
-    {name: "整備士", section_id: "3"},
-    {name: "スケジューラー", section_id: "4"},
-    {name: "人事", section_id: "5"},
-  ])

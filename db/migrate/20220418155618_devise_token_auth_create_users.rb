@@ -36,6 +36,7 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[7.0]
       t.string :employee_number
       t.string :email
       t.string :section
+      t.string :role
 
       ## Tokens
       t.text :tokens
