@@ -7,7 +7,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :validatable
 
   validates :employee_number, uniqueness: true
-  belongs_to :role
-  belongs_to :section
+
   include DeviseTokenAuth::Concerns::User
 end
