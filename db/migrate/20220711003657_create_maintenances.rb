@@ -3,7 +3,7 @@ class CreateMaintenances < ActiveRecord::Migration[7.0]
     create_table :maintenances do |t|
       t.references :ship, null: false, foreign_key: true
       t.references :user, null: false, foreign_key: true
-      t.string :ATA
+      t.string :ata
       t.string :title
       t.string :maintenance_message
       t.integer :priority

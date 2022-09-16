@@ -14,7 +14,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
   create_table "maintenances", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "ship_id", null: false
     t.bigint "user_id", null: false
-    t.string "ATA"
+    t.string "ata"
     t.string "title"
     t.string "maintenance_message"
     t.integer "priority"

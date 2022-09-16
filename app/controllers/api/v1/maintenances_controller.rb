@@ -16,6 +16,6 @@ class Api::V1::MaintenancesController < ApplicationController
   private
 
   def maintenance_params
-    params.permit(:title, :description, :ATA, :maintenance_message, :priority, :completed, :ship_id, :user_id)
+    params.permit(:title, :description, :ata, :maintenance_message, :priority, :completed, :ship_id, :user_id)
   end
 end
