@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   validates :employee_number, uniqueness: true
 
   include DeviseTokenAuth::Concerns::User
+
+  has_many :maintenances
 end

@@ -13,13 +13,17 @@
 ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
   create_table "maintenances", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "ship_id", null: false
-    t.date "date"
+    t.bigint "user_id", null: false
     t.string "ATA"
     t.string "title"
+    t.string "maintenance_message"
+    t.integer "priority"
     t.string "description"
+    t.boolean "completed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["ship_id"], name: "index_maintenances_on_ship_id"
+    t.index ["user_id"], name: "index_maintenances_on_user_id"
   end
 
   create_table "menus", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -79,5 +83,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
   end
 
   add_foreign_key "maintenances", "ships"
+  add_foreign_key "maintenances", "users"
   add_foreign_key "schedules", "ships"
 end
