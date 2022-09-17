@@ -13,7 +13,7 @@ class Api::V1::ShipsController < ApplicationController
 
   def maintenances
     @ship = Ship.includes(:maintenances).find(params[:id])
-    @maintenances = @ship.maintenances
+    @maintenances = @ship.maintenances.order(updated_at: :DESC)
     render json: @maintenances
   end
 end
