@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
     t.string "ata"
     t.string "title"
     t.string "maintenance_message"
-    t.integer "priority"
+    t.string "priority"
     t.string "description"
     t.boolean "completed"
     t.datetime "created_at", null: false

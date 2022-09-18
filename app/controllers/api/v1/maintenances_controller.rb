@@ -13,6 +13,11 @@ class Api::V1::MaintenancesController < ApplicationController
     end
   end
 
+  def destroy
+    maintenance = Maintenance.find(params[:id])
+    maintenance.destroy
+  end
+
   private
 
   def maintenance_params

@@ -6,7 +6,7 @@ class CreateMaintenances < ActiveRecord::Migration[7.0]
       t.string :ata
       t.string :title
       t.string :maintenance_message
-      t.integer :priority
+      t.string :priority
       t.string :description
       t.boolean :completed
       t.timestamps
