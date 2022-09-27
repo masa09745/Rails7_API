@@ -1,4 +1,4 @@
 class Ship < ApplicationRecord
   has_many :schedules
-  has_many :maintenances
+  has_many :maintenances, ->{order("updated_at DESC")}
 end
