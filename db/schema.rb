@@ -26,26 +26,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
     t.index ["user_id"], name: "index_maintenances_on_user_id"
   end
 
-  create_table "menus", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "schedules", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "ship_id", null: false
-    t.string "flight_number"
-    t.string "from"
-    t.string "to"
-    t.date "dep_date"
-    t.time "dep_time"
-    t.date "arr_date"
-    t.time "arr_time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["ship_id"], name: "index_schedules_on_ship_id"
-  end
-
   create_table "ships", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "regi_number"
     t.datetime "created_at", null: false
@@ -84,5 +64,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_003657) do
 
   add_foreign_key "maintenances", "ships"
   add_foreign_key "maintenances", "users"
-  add_foreign_key "schedules", "ships"
 end

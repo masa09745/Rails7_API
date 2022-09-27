@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-  menus = Menu.create([{name: "Ship"}, {name: "Schedule"}])
   ships = Ship.create([
     {regi_number: "JA01MJ"},
     {regi_number: "JA02MJ"},
