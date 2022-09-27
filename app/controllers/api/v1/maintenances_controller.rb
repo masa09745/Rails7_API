@@ -1,7 +1,12 @@
 class Api::V1::MaintenancesController < ApplicationController
   def index
-    @maintenances = Maintenance.order(updated_at: :DESC)
-    render json: @maintenances
+    maintenances = Maintenance.order(updated_at: :DESC)
+    render json: maintenances
+  end
+
+  def show
+    maintenance = Maintenance.find(params[:id])
+    render json: maintenance
   end
 
   def create
