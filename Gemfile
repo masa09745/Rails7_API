@@ -46,6 +46,10 @@ group :development do
   # gem "spring"
 end
 
+group :production do
+  gem 'unicorn'
+end
+
 gem 'devise'
 gem 'devise_token_auth', '>= 1.2.0', git: "https://github.com/lynndylanhurley/devise_token_auth"
 gem 'pry-rails'
