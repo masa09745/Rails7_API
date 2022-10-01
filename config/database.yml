@@ -52,5 +52,5 @@ production:
   <<: *default
   database: Rails7_API_production
   username: root
-  password: 2poZLOqvO3.&
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
